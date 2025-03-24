@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Counter
+
+
+@admin.register(Counter)
+class CounterModelAdmin(admin.ModelAdmin):
+    list_display = ["date", "count"]
+
