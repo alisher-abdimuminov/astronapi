@@ -85,5 +85,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # csrf
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
+CSRF_TRUSTED_ORIGINS = ["*"]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
