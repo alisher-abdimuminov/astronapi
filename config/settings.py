@@ -18,6 +18,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'ckeditor',
+    'ckeditor_uploader',
     'app',
 ]
 
@@ -88,3 +90,4 @@ CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = ["*"]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CKEDITOR_UPLOAD_PATH = "uploads/"
