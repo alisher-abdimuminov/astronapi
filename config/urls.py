@@ -8,6 +8,7 @@ from app.views import count
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('counter/<str:date>/', count,),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
