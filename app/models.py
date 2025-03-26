@@ -8,6 +8,10 @@ class Counter(models.Model):
 
     def __str__(self):
         return self.date
+    
+    class Meta:
+        verbose_name = "Sanagich"
+        verbose_name_plural = "Sanagichlar"
 
 
 class Announcement(models.Model):
@@ -16,3 +20,7 @@ class Announcement(models.Model):
 
     def __str__(self):
         return self.content
+    
+    class Meta:
+        verbose_name = "E'lon"
+        verbose_name_plural = "E'lonlar"
